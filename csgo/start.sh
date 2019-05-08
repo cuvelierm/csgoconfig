@@ -1,4 +1,21 @@
 #!/bin/bash
+
+GOOGLE_METADATA=${GOOGLE_METADATA:-0}
+
+export SERVER_HOSTNAME="${SERVER_HOSTNAME:- CSGO Server mitchken}"
+export SERVER_PASSWORD="${SERVER_PASSWORD:-changeme}"
+export RCON_PASSWORD="${RCON_PASSWORD:-changeme}"
+export STEAM_ACCOUNT="${STEAM_ACCOUNT:-changeme}"
+export CSGO_DIR="${CSGO_DIR:-/csgo}"
+export IP="${IP:-0.0.0.0}"
+export PORT="${PORT:-27015}"
+export TICKRATE="${TICKRATE:-128}"
+export GAME_TYPE="${GAME_TYPE:-0}"
+export GAME_MODE="${GAME_MODE:-1}"
+export MAP="${MAP:-de_dust2}"
+export MAPGROUP="${MAPGROUP:-mg_active}"
+export MAXPLAYERS="${MAXPLAYERS:-12}"
+
 : ${CSGO_DIR:?"ERROR: CSGO_DIR IS NOT SET!"}
 
 cd $CSGO_DIR
